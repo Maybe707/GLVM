@@ -1,0 +1,35 @@
+C = clang
+CC = clang++
+SANITIZE = -fsanitize=null -fno-omit-frame-pointer
+LDFLAGS = -lGL -lX11 -lasound -lvulkan -ldl -lpthread -lXxf86vm -lXrandr -lXi -lxcb -lxcb-keysyms -lxcb-xfixes -lxcb-cursor -lX11-xcb
+CXXFLAGS = -c -std=c++20 -g -static -Wall -Wextra -Werror -Wpedantic -O3
+CFLAGS = -c -g -Wall -Wextra -Werror -Wpedantic
+INC = -I./include
+TEX = -I./textures
+BUILD = build
+SOURCES = ./src/Engine.cpp ./src/EngineMain.cpp GLPointer.c \
+	  ./src/ShaderProgram.cpp ./src/Event.cpp ./src/UnixApi/ChronoX.cpp ./src/TimerCreator.cpp \
+	  ./src/Systems/CollisionSystem.cpp ./src/Systems/AnimationSystem.cpp ./src/Systems/GUISystem.cpp \
+	  ./src/Systems/PhysicsSystem.cpp ./src/ComponentManager.cpp ./src/EntityManager.cpp ./src/Systems/MovementSystem.cpp \
+	  ./src/SystemManager.cpp ./src/Systems/ProjectileSystem.cpp ./src/Systems/CameraSystem.cpp \
+	  ./src/UnixApi/SoundEngineAlsa.cpp ./src/SoundEngineFactory.cpp ./src/GraphicAPI/Opengl.cpp ./src/GraphicAPI/Vulkan.cpp \
+	  ./src/TextureManager.cpp ./src/WavefrontObjParser.cpp ./src/MeshManager.cpp ./src/JsonParser.cpp \
+	  ./src/UnixApi/WindowXVulkan.cpp ./src/UnixApi/WindowXOpengl.cpp ./src/UnixApi/WindowXCBVulkan.cpp \
+	  ./textures/glvm.cpp ./textures/sample1.cpp ./textures/sample2.cpp ./src/UnixApi/WindowXCBOpengl.cpp
+OBJECTS = $(SOURCES:./src/%.cpp=$(BUILD)/%.o)
+EXECUTABLE = linGame
+
+all: $(SOURCES) $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJECTS)
+	$(CC) $(LDFLAGS) $(SANITIZE) $(OBJECTS) -o $(BUILD)/$@
+
+$(BUILD)/%.o : ./src/%.cpp
+	mkdir -p $(@D)
+	$(CC) $(INC) $(TEX) $(SANITIZE) $(CXXFLAGS) $< -o $@
+
+$(BUILD)/%.o : %.c
+	$(C) $(INC) $(TEX) $(SANITIZE) $(CFLAGS) $< -o $@
+
+clean:
+	rm -rf $(BUILD)/*

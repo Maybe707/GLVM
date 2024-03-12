@@ -1,0 +1,10 @@
+;; Eval Buffer with `M-x eval-buffer' to register the newly created template.
+
+(dap-register-debug-template
+  "LLDB::Run"
+  (list :type "lldb-vscode"
+        :request "launch"
+        :name "LLDB::Run"
+        :MIMode "lldb"
+        :program "/home/Yuriorkis_Scream/cyber_code/GLVMEngine/build/linGame"
+        :cwd "/home/Yuriorkis_Scream/cyber_code/GLVMEngine/build/"))
