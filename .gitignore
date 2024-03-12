@@ -9,7 +9,6 @@ build/
 valgrind-out.txt
 valgrind-out.txt.core.54653
 rpgLin
-waveFrontObj/
 compile_commands.json
 *.dll
 *.o
