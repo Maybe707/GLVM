@@ -87,32 +87,50 @@ namespace GLVM::core
         }
     }
 
-    GLVM::core::vector<vector<char>> CWaveFrontObjParser::Split(const char* _pWaveFrontObjFileData, const char _separator, const char _exitSymbol, unsigned int& _uiCounter) {
-        GLVM::core::vector<vector<char>> wordsContainer;
-        unsigned int outerIndex = 0;
-        wordsContainer.Push({});
-        
-        for(;;++_uiCounter) {
-            if (_pWaveFrontObjFileData[_uiCounter] == '#') {
-                while(_pWaveFrontObjFileData[_uiCounter] != '\n') {
-                    ++_uiCounter;
-                }
-                continue;
-            }
-            if (_pWaveFrontObjFileData[_uiCounter] == _separator) {
-                wordsContainer[outerIndex].Push('\0');
-                wordsContainer.Push({});
-                ++outerIndex;
-                continue;
-            }
-            if (_pWaveFrontObjFileData[_uiCounter] == _exitSymbol) {
+    GLVM::core::vector<GLVM::core::vector<char>> CWaveFrontObjParser::Split(const char* _pWaveFrontObjFileData, const char _separator, const char _exitSymbol, unsigned int& _uiCounter) {
+    GLVM::core::vector<GLVM::core::vector<char>> wordsContainer;
+    unsigned int outerIndex = 0;
+    wordsContainer.Push({});
+    
+    GLVM::core::vector<char> currentWord;
+    
+    while (_pWaveFrontObjFileData[_uiCounter] != '\0') {
+        if (_pWaveFrontObjFileData[_uiCounter] == '#') {
+            while (_pWaveFrontObjFileData[_uiCounter] != '\n') {
                 ++_uiCounter;
-                wordsContainer[outerIndex].Push('\0');
-                return wordsContainer;
             }
-            wordsContainer[outerIndex].Push(_pWaveFrontObjFileData[_uiCounter]);
+            continue;
         }
+        
+        if (_pWaveFrontObjFileData[_uiCounter] == _separator) {
+            currentWord.Push('\0');
+            
+            wordsContainer[outerIndex] = currentWord;
+            
+            currentWord = {};
+            
+            wordsContainer.Push(currentWord);
+            ++outerIndex;
+            continue;
+        }
+        
+        if (_pWaveFrontObjFileData[_uiCounter] == _exitSymbol) {
+            currentWord.Push('\0');
+            
+            wordsContainer[outerIndex] = currentWord;
+            
+            ++_uiCounter;
+            break;
+        }
+        
+        currentWord.Push(_pWaveFrontObjFileData[_uiCounter]);
+        ++_uiCounter;
     }
+	    
+    wordsContainer[outerIndex] = currentWord;
+    
+    return wordsContainer;
+}
 
     SVertex CWaveFrontObjParser::ParseVertices(GLVM::core::vector<vector<char>> _wordsContainer) {
         SVertex vertex;
