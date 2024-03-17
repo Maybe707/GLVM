@@ -10,7 +10,6 @@
 #include "Event.hpp"
 #include <alsa/asoundlib.h>
 #include <alsa/pcm.h>
-#include <bits/types/FILE.h>
 #include "ISoundEngine.hpp"
 
 namespace GLVM::core::Sound

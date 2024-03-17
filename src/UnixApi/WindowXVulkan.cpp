@@ -8,8 +8,6 @@
 #include "GLPointer.h"
 #include <GL/glx.h>
 #include <X11/Xlib.h>
-#include <bits/types/time_t.h>
-#include <bits/types/wint_t.h>
 #include <iostream>
 
 namespace GLVM::core
