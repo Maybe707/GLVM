@@ -14,9 +14,9 @@
 
 #extension GL_EXT_debug_printf : enable
 
-#define DIRECTIONAL_LIGHTS_NUMBER                          4
-#define POINT_LIGHTS_NUMBER                                32
-#define SPOT_LIGHTS_NUMBER                                 8
+#define DIRECTIONAL_LIGHTS_NUMBER                          2
+#define POINT_LIGHTS_NUMBER                                2
+#define SPOT_LIGHTS_NUMBER                                 2
 
 layout(location = 0) in vec3 inFragmentPosition;
 layout(location = 1) in vec3 inFragmentNormal;
@@ -212,7 +212,7 @@ void main()
 	}
 
 	for(int i = 0; i < lightData.pointLightsArraySize; ++i) {
-		debugPrintfEXT("Quadratic value: %f", lightData.pointLightsArray[3].quadratic);
+//		debugPrintfEXT("Quadratic value: %f", lightData.pointLightsArray[3].quadratic);
 		
 		vec3 light = ComputePointLight(lightData.pointLightsArray[i], fragmentNormal, inFragmentPosition, viewDirection);
 		float shadow = ComputePointShadow(lightData.pointLightsArray[i],

@@ -74,9 +74,9 @@
 #define VK_DEBUG_PIPELINE_RED "\x1b[31mVULKAN DEBUG PIPELINE:\x1b[0m"
 #define VK_DEBUG_PIPELINE_LAYOUT_RED "\x1b[31mVULKAN DEBUG PIPELINE LAYOUT:\x1b[0m"
 
-#define DIRECTIONAL_LIGHTS_NUMBER                          4
-#define POINT_LIGHTS_NUMBER                                32
-#define SPOT_LIGHTS_NUMBER                                 8
+#define DIRECTIONAL_LIGHTS_NUMBER                          2
+#define POINT_LIGHTS_NUMBER                                2
+#define SPOT_LIGHTS_NUMBER                                 2
 
 namespace GLVM::core
 {

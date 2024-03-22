@@ -2,8 +2,8 @@
 
 #extension GL_EXT_debug_printf : enable
 
-#define SPOT_LIGHT_SPACE_MATRIX_CONTAINER_SIZE 8
-#define DIRECTIONAL_LIGHT_SPACE_MATRIX_CONTAINER_SIZE 4
+#define SPOT_LIGHT_SPACE_MATRIX_CONTAINER_SIZE 2
+#define DIRECTIONAL_LIGHT_SPACE_MATRIX_CONTAINER_SIZE 2
 
 layout(set = 0, binding = 0) uniform UniformBufferObject {
     mat4 model;

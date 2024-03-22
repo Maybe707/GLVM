@@ -3,9 +3,9 @@ out vec4 fragColor;
 // flat in int spotLightSpaceMatrixArraySize;
 // flat in int directionalLightSpaceMatrixArraySize;
 
-#define DIRECTIONAL_LIGHTS_NUMBER                          4
-#define POINT_LIGHTS_NUMBER                                32
-#define SPOT_LIGHTS_NUMBER                                 8
+#define DIRECTIONAL_LIGHTS_NUMBER                          2
+#define POINT_LIGHTS_NUMBER                                2
+#define SPOT_LIGHTS_NUMBER                                 2
 
 in VS_OUT {
 	vec3 fragmentPosition;

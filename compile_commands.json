@@ -15,173 +15,12 @@
       "-Wpedantic",
       "-O3",
       "-o",
-      "build/Event.o",
-      "src/Event.cpp"
-    ],
-    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Event.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Event.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib/llvm/17/bin/clang++",
-      "-I./include",
-      "-I./textures",
-      "-fsanitize=null",
-      "-fno-omit-frame-pointer",
-      "-c",
-      "-std=c++20",
-      "-g",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Wpedantic",
-      "-O3",
-      "-o",
-      "build/Engine.o",
-      "src/Engine.cpp"
-    ],
-    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Engine.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Engine.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib/llvm/17/bin/clang++",
-      "-I./include",
-      "-I./textures",
-      "-fsanitize=null",
-      "-fno-omit-frame-pointer",
-      "-c",
-      "-std=c++20",
-      "-g",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Wpedantic",
-      "-O3",
-      "-o",
       "build/ShaderProgram.o",
       "src/ShaderProgram.cpp"
     ],
     "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
     "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/ShaderProgram.cpp",
     "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/ShaderProgram.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib/llvm/17/bin/clang++",
-      "-I./include",
-      "-I./textures",
-      "-fsanitize=null",
-      "-fno-omit-frame-pointer",
-      "-c",
-      "-std=c++20",
-      "-g",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Wpedantic",
-      "-O3",
-      "-o",
-      "build/EntityManager.o",
-      "src/EntityManager.cpp"
-    ],
-    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/EntityManager.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/EntityManager.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib/llvm/17/bin/clang++",
-      "-I./include",
-      "-I./textures",
-      "-fsanitize=null",
-      "-fno-omit-frame-pointer",
-      "-c",
-      "-std=c++20",
-      "-g",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Wpedantic",
-      "-O3",
-      "-o",
-      "build/SystemManager.o",
-      "src/SystemManager.cpp"
-    ],
-    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/SystemManager.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/SystemManager.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib/llvm/17/bin/clang++",
-      "-I./include",
-      "-I./textures",
-      "-fsanitize=null",
-      "-fno-omit-frame-pointer",
-      "-c",
-      "-std=c++20",
-      "-g",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Wpedantic",
-      "-O3",
-      "-o",
-      "build/ComponentManager.o",
-      "src/ComponentManager.cpp"
-    ],
-    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/ComponentManager.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/ComponentManager.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib/llvm/17/bin/clang++",
-      "-I./include",
-      "-I./textures",
-      "-fsanitize=null",
-      "-fno-omit-frame-pointer",
-      "-c",
-      "-std=c++20",
-      "-g",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Wpedantic",
-      "-O3",
-      "-o",
-      "build/UnixApi/ChronoX.o",
-      "src/UnixApi/ChronoX.cpp"
-    ],
-    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/UnixApi/ChronoX.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/UnixApi/ChronoX.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib/llvm/17/bin/clang++",
-      "-I./include",
-      "-I./textures",
-      "-fsanitize=null",
-      "-fno-omit-frame-pointer",
-      "-c",
-      "-std=c++20",
-      "-g",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Wpedantic",
-      "-O3",
-      "-o",
-      "build/Systems/PhysicsSystem.o",
-      "src/Systems/PhysicsSystem.cpp"
-    ],
-    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Systems/PhysicsSystem.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Systems/PhysicsSystem.o"
   },
   {
     "arguments": [
@@ -222,81 +61,12 @@
       "-Wpedantic",
       "-O3",
       "-o",
-      "build/Systems/AnimationSystem.o",
-      "src/Systems/AnimationSystem.cpp"
+      "build/Engine.o",
+      "src/Engine.cpp"
     ],
     "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Systems/AnimationSystem.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Systems/AnimationSystem.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib/llvm/17/bin/clang++",
-      "-I./include",
-      "-I./textures",
-      "-fsanitize=null",
-      "-fno-omit-frame-pointer",
-      "-c",
-      "-std=c++20",
-      "-g",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Wpedantic",
-      "-O3",
-      "-o",
-      "build/Systems/ProjectileSystem.o",
-      "src/Systems/ProjectileSystem.cpp"
-    ],
-    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Systems/ProjectileSystem.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Systems/ProjectileSystem.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib/llvm/17/bin/clang++",
-      "-I./include",
-      "-I./textures",
-      "-fsanitize=null",
-      "-fno-omit-frame-pointer",
-      "-c",
-      "-std=c++20",
-      "-g",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Wpedantic",
-      "-O3",
-      "-o",
-      "build/TimerCreator.o",
-      "src/TimerCreator.cpp"
-    ],
-    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/TimerCreator.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/TimerCreator.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib/llvm/17/bin/clang++",
-      "-I./include",
-      "-I./textures",
-      "-fsanitize=null",
-      "-fno-omit-frame-pointer",
-      "-c",
-      "-std=c++20",
-      "-g",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Wpedantic",
-      "-O3",
-      "-o",
-      "build/Systems/CollisionSystem.o",
-      "src/Systems/CollisionSystem.cpp"
-    ],
-    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Systems/CollisionSystem.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Systems/CollisionSystem.o"
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Engine.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Engine.o"
   },
   {
     "arguments": [
@@ -337,35 +107,12 @@
       "-Wpedantic",
       "-O3",
       "-o",
-      "build/GraphicAPI/Vulkan.o",
-      "src/GraphicAPI/Vulkan.cpp"
+      "build/TimerCreator.o",
+      "src/TimerCreator.cpp"
     ],
     "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/GraphicAPI/Vulkan.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/GraphicAPI/Vulkan.o"
-  },
-  {
-    "arguments": [
-      "/usr/lib/llvm/17/bin/clang++",
-      "-I./include",
-      "-I./textures",
-      "-fsanitize=null",
-      "-fno-omit-frame-pointer",
-      "-c",
-      "-std=c++20",
-      "-g",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Wpedantic",
-      "-O3",
-      "-o",
-      "build/Systems/CameraSystem.o",
-      "src/Systems/CameraSystem.cpp"
-    ],
-    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
-    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Systems/CameraSystem.cpp",
-    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Systems/CameraSystem.o"
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/TimerCreator.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/TimerCreator.o"
   },
   {
     "arguments": [
@@ -406,12 +153,219 @@
       "-Wpedantic",
       "-O3",
       "-o",
+      "build/Event.o",
+      "src/Event.cpp"
+    ],
+    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Event.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Event.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/17/bin/clang++",
+      "-I./include",
+      "-I./textures",
+      "-fsanitize=null",
+      "-fno-omit-frame-pointer",
+      "-c",
+      "-std=c++20",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wpedantic",
+      "-O3",
+      "-o",
+      "build/UnixApi/ChronoX.o",
+      "src/UnixApi/ChronoX.cpp"
+    ],
+    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/UnixApi/ChronoX.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/UnixApi/ChronoX.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/17/bin/clang++",
+      "-I./include",
+      "-I./textures",
+      "-fsanitize=null",
+      "-fno-omit-frame-pointer",
+      "-c",
+      "-std=c++20",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wpedantic",
+      "-O3",
+      "-o",
+      "build/ComponentManager.o",
+      "src/ComponentManager.cpp"
+    ],
+    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/ComponentManager.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/ComponentManager.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/17/bin/clang++",
+      "-I./include",
+      "-I./textures",
+      "-fsanitize=null",
+      "-fno-omit-frame-pointer",
+      "-c",
+      "-std=c++20",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wpedantic",
+      "-O3",
+      "-o",
+      "build/Systems/AnimationSystem.o",
+      "src/Systems/AnimationSystem.cpp"
+    ],
+    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Systems/AnimationSystem.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Systems/AnimationSystem.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/17/bin/clang++",
+      "-I./include",
+      "-I./textures",
+      "-fsanitize=null",
+      "-fno-omit-frame-pointer",
+      "-c",
+      "-std=c++20",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wpedantic",
+      "-O3",
+      "-o",
+      "build/SystemManager.o",
+      "src/SystemManager.cpp"
+    ],
+    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/SystemManager.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/SystemManager.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/17/bin/clang++",
+      "-I./include",
+      "-I./textures",
+      "-fsanitize=null",
+      "-fno-omit-frame-pointer",
+      "-c",
+      "-std=c++20",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wpedantic",
+      "-O3",
+      "-o",
+      "build/Systems/CollisionSystem.o",
+      "src/Systems/CollisionSystem.cpp"
+    ],
+    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Systems/CollisionSystem.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Systems/CollisionSystem.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/17/bin/clang++",
+      "-I./include",
+      "-I./textures",
+      "-fsanitize=null",
+      "-fno-omit-frame-pointer",
+      "-c",
+      "-std=c++20",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wpedantic",
+      "-O3",
+      "-o",
       "build/SoundEngineFactory.o",
       "src/SoundEngineFactory.cpp"
     ],
     "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
     "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/SoundEngineFactory.cpp",
     "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/SoundEngineFactory.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/17/bin/clang++",
+      "-I./include",
+      "-I./textures",
+      "-fsanitize=null",
+      "-fno-omit-frame-pointer",
+      "-c",
+      "-std=c++20",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wpedantic",
+      "-O3",
+      "-o",
+      "build/Systems/CameraSystem.o",
+      "src/Systems/CameraSystem.cpp"
+    ],
+    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Systems/CameraSystem.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Systems/CameraSystem.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/17/bin/clang++",
+      "-I./include",
+      "-I./textures",
+      "-fsanitize=null",
+      "-fno-omit-frame-pointer",
+      "-c",
+      "-std=c++20",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wpedantic",
+      "-O3",
+      "-o",
+      "build/Systems/ProjectileSystem.o",
+      "src/Systems/ProjectileSystem.cpp"
+    ],
+    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Systems/ProjectileSystem.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Systems/ProjectileSystem.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/17/bin/clang++",
+      "-I./include",
+      "-I./textures",
+      "-fsanitize=null",
+      "-fno-omit-frame-pointer",
+      "-c",
+      "-std=c++20",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wpedantic",
+      "-O3",
+      "-o",
+      "build/Systems/PhysicsSystem.o",
+      "src/Systems/PhysicsSystem.cpp"
+    ],
+    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/Systems/PhysicsSystem.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/Systems/PhysicsSystem.o"
   },
   {
     "arguments": [
@@ -458,6 +412,52 @@
     "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
     "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/UnixApi/SoundEngineAlsa.cpp",
     "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/UnixApi/SoundEngineAlsa.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/17/bin/clang++",
+      "-I./include",
+      "-I./textures",
+      "-fsanitize=null",
+      "-fno-omit-frame-pointer",
+      "-c",
+      "-std=c++20",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wpedantic",
+      "-O3",
+      "-o",
+      "build/GraphicAPI/Vulkan.o",
+      "src/GraphicAPI/Vulkan.cpp"
+    ],
+    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/GraphicAPI/Vulkan.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/GraphicAPI/Vulkan.o"
+  },
+  {
+    "arguments": [
+      "/usr/lib/llvm/17/bin/clang++",
+      "-I./include",
+      "-I./textures",
+      "-fsanitize=null",
+      "-fno-omit-frame-pointer",
+      "-c",
+      "-std=c++20",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Wpedantic",
+      "-O3",
+      "-o",
+      "build/EntityManager.o",
+      "src/EntityManager.cpp"
+    ],
+    "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
+    "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/src/EntityManager.cpp",
+    "output": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/build/EntityManager.o"
   },
   {
     "arguments": [
@@ -883,12 +883,12 @@
       "-x",
       "c++",
       "-o",
-      "/tmp/GLPointer-f3448e.o",
+      "/tmp/GLPointer-133b51.o",
       "GLPointer.c"
     ],
     "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
     "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/GLPointer.c",
-    "output": "/tmp/GLPointer-f3448e.o"
+    "output": "/tmp/GLPointer-133b51.o"
   },
   {
     "arguments": [
@@ -962,12 +962,12 @@
       "-x",
       "c++",
       "-o",
-      "/tmp/glvm-bb64fc.o",
+      "/tmp/glvm-254109.o",
       "./textures/glvm.cpp"
     ],
     "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
     "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/textures/glvm.cpp",
-    "output": "/tmp/glvm-bb64fc.o"
+    "output": "/tmp/glvm-254109.o"
   },
   {
     "arguments": [
@@ -1041,12 +1041,12 @@
       "-x",
       "c++",
       "-o",
-      "/tmp/sample1-f1ac08.o",
+      "/tmp/sample1-c1bcf4.o",
       "./textures/sample1.cpp"
     ],
     "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
     "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/textures/sample1.cpp",
-    "output": "/tmp/sample1-f1ac08.o"
+    "output": "/tmp/sample1-c1bcf4.o"
   },
   {
     "arguments": [
@@ -1120,11 +1120,11 @@
       "-x",
       "c++",
       "-o",
-      "/tmp/sample2-dd17e6.o",
+      "/tmp/sample2-b151b4.o",
       "./textures/sample2.cpp"
     ],
     "directory": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine",
     "file": "/home/Yuriorkis_Scream/cyber_code/glvm_release/GLVMEngine/textures/sample2.cpp",
-    "output": "/tmp/sample2-dd17e6.o"
+    "output": "/tmp/sample2-b151b4.o"
   }
 ]

@@ -8,8 +8,8 @@ layout (location = 2) in vec2 textureCoordinates;
 layout (location = 3) in vec4 jointIndices;
 layout (location = 4) in vec4 weights;
 
-#define SPOT_LIGHT_SPACE_MATRIX_CONTAINER_SIZE 8
-#define DIRECTIONAL_LIGHT_SPACE_MATRIX_CONTAINER_SIZE 4
+#define SPOT_LIGHT_SPACE_MATRIX_CONTAINER_SIZE 2
+#define DIRECTIONAL_LIGHT_SPACE_MATRIX_CONTAINER_SIZE 2
 
 out vec2 textureCoords;
 // flat out int spotLightSpaceMatrixArraySize;
